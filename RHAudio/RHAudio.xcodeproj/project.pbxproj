@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		834E55C71B23D2D7006F0A2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834E55C61B23D2D7006F0A2A /* main.m */; };
+		834E55CA1B23D2D7006F0A2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834E55C91B23D2D7006F0A2A /* AppDelegate.m */; };
+		834E55CD1B23D2D7006F0A2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834E55CC1B23D2D7006F0A2A /* ViewController.m */; };
+		834E55D21B23D2D7006F0A2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834E55D11B23D2D7006F0A2A /* Images.xcassets */; };
+		834E55D51B23D2D7006F0A2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834E55D31B23D2D7006F0A2A /* LaunchScreen.xib */; };
+		834E55E11B23D2D7006F0A2A /* RHAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834E55E01B23D2D7006F0A2A /* RHAudioTests.m */; };
+		83BB60511B23DE520036775F /* RHAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BB604D1B23DE520036775F /* RHAudioPlayer.m */; };
+		83BB60521B23DE520036775F /* RHAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BB60501B23DE520036775F /* RHAudioRecorder.m */; };
+		83BB605C1B24501D0036775F /* RHAudioMp3Output.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BB605B1B24501D0036775F /* RHAudioMp3Output.m */; };
+		83BB605F1B24502F0036775F /* RHAudioAmrOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BB605E1B24502F0036775F /* RHAudioAmrOutput.m */; };
+		83BB60621B2450410036775F /* RHAudioCafOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BB60611B2450410036775F /* RHAudioCafOutput.m */; };
+		83BB60671B2477280036775F /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB60661B2477280036775F /* libmp3lame.a */; };
+		83BB60731B24848E0036775F /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB60711B24848E0036775F /* libopencore-amrnb.a */; };
+		83BB60741B24848E0036775F /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB60721B24848E0036775F /* libopencore-amrwb.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		834E55DB1B23D2D7006F0A2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 834E55B91B23D2D7006F0A2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834E55C01B23D2D7006F0A2A;
+			remoteInfo = RHAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		834E55C11B23D2D7006F0A2A /* RHAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RHAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834E55C51B23D2D7006F0A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834E55C61B23D2D7006F0A2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		834E55C81B23D2D7006F0A2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		834E55C91B23D2D7006F0A2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		834E55CB1B23D2D7006F0A2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		834E55CC1B23D2D7006F0A2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		834E55D11B23D2D7006F0A2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		834E55D41B23D2D7006F0A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		834E55DA1B23D2D7006F0A2A /* RHAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RHAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834E55DF1B23D2D7006F0A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834E55E01B23D2D7006F0A2A /* RHAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHAudioTests.m; sourceTree = "<group>"; };
+		83BB604C1B23DE520036775F /* RHAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAudioPlayer.h; sourceTree = "<group>"; };
+		83BB604D1B23DE520036775F /* RHAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAudioPlayer.m; sourceTree = "<group>"; };
+		83BB604F1B23DE520036775F /* RHAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAudioRecorder.h; sourceTree = "<group>"; };
+		83BB60501B23DE520036775F /* RHAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAudioRecorder.m; sourceTree = "<group>"; };
+		83BB60531B23E42A0036775F /* RHAudioConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHAudioConfig.h; sourceTree = "<group>"; };
+		83BB605A1B24501D0036775F /* RHAudioMp3Output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAudioMp3Output.h; sourceTree = "<group>"; };
+		83BB605B1B24501D0036775F /* RHAudioMp3Output.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAudioMp3Output.m; sourceTree = "<group>"; };
+		83BB605D1B24502F0036775F /* RHAudioAmrOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAudioAmrOutput.h; sourceTree = "<group>"; };
+		83BB605E1B24502F0036775F /* RHAudioAmrOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAudioAmrOutput.m; sourceTree = "<group>"; };
+		83BB60601B2450410036775F /* RHAudioCafOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAudioCafOutput.h; sourceTree = "<group>"; };
+		83BB60611B2450410036775F /* RHAudioCafOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHAudioCafOutput.m; sourceTree = "<group>"; };
+		83BB60631B2472DA0036775F /* RHAudioOutputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHAudioOutputDelegate.h; sourceTree = "<group>"; };
+		83BB60651B2477280036775F /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		83BB60661B2477280036775F /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		83BB606B1B24848E0036775F /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		83BB606C1B24848E0036775F /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		83BB606E1B24848E0036775F /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		83BB606F1B24848E0036775F /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		83BB60711B24848E0036775F /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		83BB60721B24848E0036775F /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		834E55BE1B23D2D7006F0A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BB60671B2477280036775F /* libmp3lame.a in Frameworks */,
+				83BB60741B24848E0036775F /* libopencore-amrwb.a in Frameworks */,
+				83BB60731B24848E0036775F /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E55D71B23D2D7006F0A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		834E55B81B23D2D7006F0A2A = {
+			isa = PBXGroup;
+			children = (
+				834E55C31B23D2D7006F0A2A /* RHAudio */,
+				834E55DD1B23D2D7006F0A2A /* RHAudioTests */,
+				834E55C21B23D2D7006F0A2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		834E55C21B23D2D7006F0A2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834E55C11B23D2D7006F0A2A /* RHAudio.app */,
+				834E55DA1B23D2D7006F0A2A /* RHAudioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834E55C31B23D2D7006F0A2A /* RHAudio */ = {
+			isa = PBXGroup;
+			children = (
+				83BB604A1B23DE520036775F /* Classes */,
+				834E55C81B23D2D7006F0A2A /* AppDelegate.h */,
+				834E55C91B23D2D7006F0A2A /* AppDelegate.m */,
+				834E55CB1B23D2D7006F0A2A /* ViewController.h */,
+				834E55CC1B23D2D7006F0A2A /* ViewController.m */,
+				834E55D11B23D2D7006F0A2A /* Images.xcassets */,
+				834E55D31B23D2D7006F0A2A /* LaunchScreen.xib */,
+				834E55C41B23D2D7006F0A2A /* Supporting Files */,
+			);
+			path = RHAudio;
+			sourceTree = "<group>";
+		};
+		834E55C41B23D2D7006F0A2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834E55C51B23D2D7006F0A2A /* Info.plist */,
+				834E55C61B23D2D7006F0A2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		834E55DD1B23D2D7006F0A2A /* RHAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				834E55E01B23D2D7006F0A2A /* RHAudioTests.m */,
+				834E55DE1B23D2D7006F0A2A /* Supporting Files */,
+			);
+			path = RHAudioTests;
+			sourceTree = "<group>";
+		};
+		834E55DE1B23D2D7006F0A2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834E55DF1B23D2D7006F0A2A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83BB604A1B23DE520036775F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83BB60681B24848E0036775F /* amr_en_de */,
+				83BB60641B2477280036775F /* lame */,
+				83BB604B1B23DE520036775F /* RHAudioPlayer */,
+				83BB604E1B23DE520036775F /* RHAudioRecorder */,
+				83BB60531B23E42A0036775F /* RHAudioConfig.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		83BB604B1B23DE520036775F /* RHAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				83BB604C1B23DE520036775F /* RHAudioPlayer.h */,
+				83BB604D1B23DE520036775F /* RHAudioPlayer.m */,
+			);
+			path = RHAudioPlayer;
+			sourceTree = "<group>";
+		};
+		83BB604E1B23DE520036775F /* RHAudioRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				83BB604F1B23DE520036775F /* RHAudioRecorder.h */,
+				83BB60501B23DE520036775F /* RHAudioRecorder.m */,
+				83BB605A1B24501D0036775F /* RHAudioMp3Output.h */,
+				83BB605B1B24501D0036775F /* RHAudioMp3Output.m */,
+				83BB605D1B24502F0036775F /* RHAudioAmrOutput.h */,
+				83BB605E1B24502F0036775F /* RHAudioAmrOutput.m */,
+				83BB60601B2450410036775F /* RHAudioCafOutput.h */,
+				83BB60611B2450410036775F /* RHAudioCafOutput.m */,
+				83BB60631B2472DA0036775F /* RHAudioOutputDelegate.h */,
+			);
+			path = RHAudioRecorder;
+			sourceTree = "<group>";
+		};
+		83BB60641B2477280036775F /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				83BB60651B2477280036775F /* lame.h */,
+				83BB60661B2477280036775F /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		83BB60681B24848E0036775F /* amr_en_de */ = {
+			isa = PBXGroup;
+			children = (
+				83BB60691B24848E0036775F /* include */,
+				83BB60701B24848E0036775F /* lib */,
+			);
+			path = amr_en_de;
+			sourceTree = "<group>";
+		};
+		83BB60691B24848E0036775F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				83BB606A1B24848E0036775F /* opencore-amrnb */,
+				83BB606D1B24848E0036775F /* opencore-amrwb */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		83BB606A1B24848E0036775F /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				83BB606B1B24848E0036775F /* interf_dec.h */,
+				83BB606C1B24848E0036775F /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		83BB606D1B24848E0036775F /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				83BB606E1B24848E0036775F /* dec_if.h */,
+				83BB606F1B24848E0036775F /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		83BB60701B24848E0036775F /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				83BB60711B24848E0036775F /* libopencore-amrnb.a */,
+				83BB60721B24848E0036775F /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		834E55C01B23D2D7006F0A2A /* RHAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834E55E41B23D2D7006F0A2A /* Build configuration list for PBXNativeTarget "RHAudio" */;
+			buildPhases = (
+				834E55BD1B23D2D7006F0A2A /* Sources */,
+				834E55BE1B23D2D7006F0A2A /* Frameworks */,
+				834E55BF1B23D2D7006F0A2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RHAudio;
+			productName = RHAudio;
+			productReference = 834E55C11B23D2D7006F0A2A /* RHAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		834E55D91B23D2D7006F0A2A /* RHAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834E55E71B23D2D7006F0A2A /* Build configuration list for PBXNativeTarget "RHAudioTests" */;
+			buildPhases = (
+				834E55D61B23D2D7006F0A2A /* Sources */,
+				834E55D71B23D2D7006F0A2A /* Frameworks */,
+				834E55D81B23D2D7006F0A2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834E55DC1B23D2D7006F0A2A /* PBXTargetDependency */,
+			);
+			name = RHAudioTests;
+			productName = RHAudioTests;
+			productReference = 834E55DA1B23D2D7006F0A2A /* RHAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		834E55B91B23D2D7006F0A2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = zhuruhong;
+				TargetAttributes = {
+					834E55C01B23D2D7006F0A2A = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					834E55D91B23D2D7006F0A2A = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 834E55C01B23D2D7006F0A2A;
+					};
+				};
+			};
+			buildConfigurationList = 834E55BC1B23D2D7006F0A2A /* Build configuration list for PBXProject "RHAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 834E55B81B23D2D7006F0A2A;
+			productRefGroup = 834E55C21B23D2D7006F0A2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				834E55C01B23D2D7006F0A2A /* RHAudio */,
+				834E55D91B23D2D7006F0A2A /* RHAudioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		834E55BF1B23D2D7006F0A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834E55D51B23D2D7006F0A2A /* LaunchScreen.xib in Resources */,
+				834E55D21B23D2D7006F0A2A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E55D81B23D2D7006F0A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834E55BD1B23D2D7006F0A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834E55CD1B23D2D7006F0A2A /* ViewController.m in Sources */,
+				83BB605C1B24501D0036775F /* RHAudioMp3Output.m in Sources */,
+				83BB605F1B24502F0036775F /* RHAudioAmrOutput.m in Sources */,
+				834E55CA1B23D2D7006F0A2A /* AppDelegate.m in Sources */,
+				834E55C71B23D2D7006F0A2A /* main.m in Sources */,
+				83BB60511B23DE520036775F /* RHAudioPlayer.m in Sources */,
+				83BB60521B23DE520036775F /* RHAudioRecorder.m in Sources */,
+				83BB60621B2450410036775F /* RHAudioCafOutput.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834E55D61B23D2D7006F0A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834E55E11B23D2D7006F0A2A /* RHAudioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		834E55DC1B23D2D7006F0A2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834E55C01B23D2D7006F0A2A /* RHAudio */;
+			targetProxy = 834E55DB1B23D2D7006F0A2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		834E55D31B23D2D7006F0A2A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834E55D41B23D2D7006F0A2A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		834E55E21B23D2D7006F0A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		834E55E31B23D2D7006F0A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		834E55E51B23D2D7006F0A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RHAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RHAudio/Classes/lame",
+					"$(PROJECT_DIR)/RHAudio/Classes/amr_en_de/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		834E55E61B23D2D7006F0A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RHAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RHAudio/Classes/lame",
+					"$(PROJECT_DIR)/RHAudio/Classes/amr_en_de/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		834E55E81B23D2D7006F0A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RHAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHAudio.app/RHAudio";
+			};
+			name = Debug;
+		};
+		834E55E91B23D2D7006F0A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RHAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RHAudio.app/RHAudio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834E55BC1B23D2D7006F0A2A /* Build configuration list for PBXProject "RHAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834E55E21B23D2D7006F0A2A /* Debug */,
+				834E55E31B23D2D7006F0A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834E55E41B23D2D7006F0A2A /* Build configuration list for PBXNativeTarget "RHAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834E55E51B23D2D7006F0A2A /* Debug */,
+				834E55E61B23D2D7006F0A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834E55E71B23D2D7006F0A2A /* Build configuration list for PBXNativeTarget "RHAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834E55E81B23D2D7006F0A2A /* Debug */,
+				834E55E91B23D2D7006F0A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 834E55B91B23D2D7006F0A2A /* Project object */;
+}
